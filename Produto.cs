@@ -3,15 +3,17 @@ namespace Aula23
     public class Produto
     {
         public string Nome { get; set; }
-        public int Numero { get; set; }
-        public  float Codigo { get; set; }
+        public int Codigo { get; set; }
+        public  float Preco { get; set; }
 
         public Produto(){
 
         }
-        public Produto( string _nome, int _numero, float _codigo ){
+        public Produto( int _codigo, string _nome, float _preco ){
+            
+            this.Codigo = _codigo;
             this.Nome = _nome;
-            this.Numero = _numero;
-            this.Codigo = _codigo;        }
+            this.Preco = _preco;       
+         }
     }
 }
